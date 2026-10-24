@@ -3,7 +3,7 @@
 > 把任意文件藏进一张图片，换一个地方用 5 位口令码取回。
 
 <!-- 徽章 -->
-![版本](https://img.shields.io/badge/version-0.2.0-blue)
+![版本](https://img.shields.io/badge/version-0.2.1-blue)
 ![平台](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64-lightgrey)
 ![许可证](https://img.shields.io/badge/license-MIT-green)
 
@@ -72,8 +72,8 @@
 
 | 产物 | 适用 | 大小 |
 | --- | --- | --- |
-| `FilePickup-v0.2.0-Setup.exe` | **推荐**，双击安装，自动建快捷方式，可在设置里卸载 | 34.82 MiB |
-| `FilePickup-v0.2.0-Portable.zip` | 免安装，解压即用（便携版） | 64.18 MiB |
+| `FilePickup-v0.2.1-Setup.exe` | **推荐**，双击安装，自动建快捷方式，可在设置里卸载 | 34.82 MiB |
+| `FilePickup-v0.2.1-Portable.zip` | 免安装，解压即用（便携版） | 64.19 MiB |
 
 所有产物的校验值见 [release/SHA256SUMS.txt](release/SHA256SUMS.txt)。
 
