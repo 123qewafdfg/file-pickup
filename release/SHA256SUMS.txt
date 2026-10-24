@@ -1,0 +1,2 @@
+1fadf2bd7cb25dbc6e932847a61a7edcf64aaf4d05b81afa1a5a190ad2981755  FilePickup-v0.2.0-Setup.exe
+2cf0e4f9a92abd8ef68411d3c835911a163e1ce33f15eb9d9503ddcaa24289d6  FilePickup-v0.2.0-Portable.zip

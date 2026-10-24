@@ -1,0 +1,136 @@
+文件取件（FilePickup）v0.2.0
+第三方组件与许可证声明
+================================================================
+
+本程序包含或链接了下述第三方软件。各组件的著作权归其各自作者所有。
+本文件依据各自许可证的署名与许可证文本要求提供。
+
+分发本程序的任何形式（安装包、便携压缩包等）应同时附带本文件与
+licenses/ 目录下的许可证全文。
+
+
+----------------------------------------------------------------
+1. Qt 6.8.3 — GNU LGPL v3（动态链接）
+----------------------------------------------------------------
+
+本程序以【动态链接】方式使用 Qt 6 的部分模块（Core、Gui、Qml、Quick、
+QuickControls2、Network、Svg、Concurrent、Widgets、PrintSupport 等）。
+
+Qt 库以独立的 DLL 文件形式随程序安装，位于程序安装目录
+（默认：%LOCALAPPDATA%\Programs\FilePickup）下，文件名形如：
+    Qt6Core.dll  Qt6Gui.dll  Qt6Quick.dll  Qt6Qml.dll …
+
+依据 GNU LGPL v3 第 4 条（Combined Works）与第 6 条，你享有以下权利：
+
+  (a) 替换权：你可以用自行编译或修改过的 Qt 库替换上述 DLL，
+      并继续使用本程序，无需通知作者或取得授权。
+  (b) 源码获取权：你可以获取 Qt 的完整源代码，方式为
+        https://download.qt.io/official_releases/qt/6.8/6.8.3/single/
+      或 Qt 官方镜像 https://download.qt.io/
+  (c) 反向工程权：为调试上述替换后的 Qt 库，你可以对本程序进行
+      必要的反向工程。
+
+作者声明：本程序未对 Qt 源代码作任何修改。
+
+Qt 许可证全文：
+  · GNU LGPL v3 全文 → licenses/LGPL-3.0.txt
+  · GNU LGPL v3 以 GNU GPL v3 为基础 → licenses/GPL-3.0.txt
+
+Qt 是 The Qt Company Oy 的商标。本程序与 The Qt Company 无隶属关系，
+亦未获其背书。
+
+
+----------------------------------------------------------------
+2. libsodium 1.0.18+ — ISC 许可证
+----------------------------------------------------------------
+
+Copyright (c) 2013-2024 Frank Denis <j at pureftpd dot org>
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+用途：XChaCha20-Poly1305 流式加密（crypto_secretstream）。
+
+
+----------------------------------------------------------------
+3. FluentUI 1.7.7 — MIT 许可证
+----------------------------------------------------------------
+
+Copyright (c) 2023 zhuzichu520
+
+MIT License（全文见程序仓库根目录 LICENSE 文件的同等条款）
+
+用途：QML 组件库（本程序以静态方式链接）。该库以 MIT 协议提供，
+本程序对其源码未作功能性修改，仅在 Windows 无边框窗口处理上补回
+WS_MINIMIZEBOX 窗口样式位以修复最小化失效缺陷。
+
+
+----------------------------------------------------------------
+4. miniz — MIT 许可证
+----------------------------------------------------------------
+
+Copyright (c) 2013-2014 RAD Game Tools and Valve Software
+Copyright (c) 2010-2013 Rich Geldreich
+
+用途：zip 解压（third_party/miniz）。
+
+
+----------------------------------------------------------------
+5. Python 3.11.9 运行时 — PSF License Agreement
+----------------------------------------------------------------
+
+Copyright (c) 2001-2024 Python Software Foundation. All rights reserved.
+
+本程序附带 Python 3.11 的嵌入式（embeddable）运行时，位于
+runtime\python\，其许可证文本随运行时一同分发：
+    runtime\python\LICENSE.txt
+
+随附于 site-packages 的第三方 Python 包（如 requests、urllib3、idna、
+beautifulsoup4、pycryptodomex、segno、humanize、py7zr 等）各自的
+许可证文本保留在：
+    runtime\python\Lib\site-packages\<包名>-<版本>.dist-info\ 下
+（通常为 LICENSE、LICENCE 或 METADATA 内的 License 字段）。
+
+
+----------------------------------------------------------------
+6. Microsoft Visual C++ 运行库 — Microsoft 可再发行条款
+----------------------------------------------------------------
+
+本程序附带 Microsoft Visual C++ 2015-2022 Redistributable 运行库
+（msvcp140.dll、vcruntime140.dll、vcruntime140_1.dll 等），其使用受
+Microsoft 软件许可条款约束（https://learn.microsoft.com/cpp/windows/redistributing-components）。
+
+
+----------------------------------------------------------------
+7. aria2 1.37.0 — GNU GPL v2
+----------------------------------------------------------------
+
+Copyright (C) 2006-2023 Tatsuhiro Tsujikawa 及贡献者
+
+本程序附带 aria2 的可执行文件（aria2c.exe），作为**独立程序**由本程序
+以子进程方式调用，两者仅通过命令行与文件系统交互，属 GPL 所称的
+"mere aggregation"（单纯聚合），不影响本程序自身的许可证。
+
+依据 GPL v2 第 3 条，随包提供：
+  · 许可证全文 → 程序安装目录下 licenses\aria2-GPL-2.0.txt
+  · 源码获取方式 → https://github.com/aria2/aria2/releases/tag/release-1.37.0
+    或 https://aria2.github.io/
+
+本程序未修改 aria2 的源代码。
+
+----------------------------------------------------------------
+联系方式
+----------------------------------------------------------------
+
+项目仓库：https://github.com/123qewafdfg/file-pickup
+问题反馈：仓库 Issues
+安全问题：见 SECURITY.md

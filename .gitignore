@@ -1,0 +1,26 @@
+# 构建产物
+build/
+dist/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+*.user
+*.user.*
+
+# 发布二进制（走 GitHub Releases，不入库；目录内的说明与校验值仍跟踪）
+release/*.exe
+release/*.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# 编辑器 / IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# 本地环境
+.env
